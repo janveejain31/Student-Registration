@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Form */
+form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Table */
+.table-container {
+    max-height: 300px;
+    overflow-y: auto; /* Scrollbar dynamically */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 640px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    form {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
